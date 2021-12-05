@@ -1,0 +1,397 @@
+<!----->
+<!doctype html>
+<html lang="en-gb" class="no-js">
+<head>
+    <meta charset="utf-8">
+	<title>Energy consumption monitoring system</title>
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">		
+		
+	<!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      
+
+     <!--styles -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="animate.css" />
+    <link rel="stylesheet" href="etlinefont.css">
+    <link href="style.css" type="text/css"  rel="stylesheet"/>
+    <link rel="stylesheet" href="formstyle.css">
+    <script type="text/javascript" lang="javascript" src="function.js"></script>
+    <style>
+
+
+}
+*{
+    margin: 0px;
+}
+.expandable {
+  background: #fff;
+  overflow: hidden;
+  color: #000;   
+  line-height: 50px;
+
+  transition: all .5s ease-in-out;
+  height: 0;
+ }
+ 
+ .expandable:target {
+  height: 50px;
+}
+.noti
+.maximun2{
+    padding:60px;
+    margin: 60px;
+}
+.notif{
+    left: 30px;
+    top: 30px;
+    position: relative;
+}
+        .dropbtn {
+          background-color: #3498DB;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        @media min-width= {
+            
+        }
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #2980B9;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          position: relative;
+          padding: 50px;
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          width:100%;
+          z-index: 1;
+          height: auto;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown a:hover {background-color: #ddd;}
+        
+        .show {display: block;}
+        </style>
+
+	<body  data-spy="scroll" data-target="#main-menu">
+</head>
+   
+      
+   <!--Start Navigation-->
+		<header id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="fa fa-bars"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+                            <!--Start Logo -->
+							<div class="logo-nav">
+								<a href="index.html">
+									<img src="logo.png" alt="Company logo" / height="100px" width="auto">
+								</a>
+							</div>
+                            <!--End Logo -->
+							<div class="clear-toggle"></div>
+							<div id="main-menu" class="collapse scroll navbar-right">
+								<ul class="nav">
+                                
+									<li class="active"> <a href="#home">Home</a>
+                                    <li> <a href="#home2">Notification</a> </li>   
+								    <li> <a href="#Devices">Devices</a> </li>
+									<li> <a href="#contact">Credits</a> </li>
+										
+								</ul>
+							</div><!-- end main-menu -->
+						</div>
+					</div>
+				</div>
+			</header>
+    <!--End Navigation-->
+
+      
+     <!-- Start Slider  -->
+     <section id="home" class="home">
+        <div class="slider-overlay"></div>
+       <div class="flexslider">
+           <ul class="slides scroll">
+               <li class="first">
+                   <div class="slider-text-wrapper">  
+                       <div class="container">
+                           <div class="big">IOT Based Energy consumption monitoring System</div>          
+                           <div class="small">Conserve energy to preserve future</div>
+                           <a href="#works" id="form-popup" class="middle btn btn-white" onclick="regshow()">Register</a>
+                       </div>       
+                   </div>
+                   <img src="1.jpg" alt="">
+               </li>
+           </ul>
+       </div>
+   </section>
+   <section id="home2" class="home">
+    <div class="slider-overlay"></div>
+   <div class="flexslider">
+       <ul class="slides scroll">
+           <li class="first">
+               <div class="slider-text-wrapper">  
+                   <div class="container">
+                       <div class="noti"   id="noti1">Warning!! Energy limit is crosed</div>
+                   </div>       
+               </div>
+               <img src="2.jpg" alt="">
+           </li>
+       </ul>
+   </div>
+</section>
+     <!-- End Slider  -->
+     <section id="secondpage" style="
+     padding: 50px;
+     width: 300px;
+     padding-left: 100px;
+     height: auto;
+     display:none;
+ ">  
+    <div id="form-popup" >
+        <form action="/action_page.php" class="form-container">
+          <h1 class="regi">Register</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="lname">Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="lname" name="name" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" placeholder="it should contain @,.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="col-90">
+                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="city">House Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="city" name="city" maxlength="10">
+                </div>
+                <div class="roomspecs"><div class="row">
+                    <div class="col-10">
+                        <label for="qualification" required >Device</label>
+                    </div>
+                    <div class="col-90">
+                        <select name="qualification" id="qualification">
+                            <option value=" ">Select your device</option>
+                            <option value="Graduation">Washing Mashine</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="specialization">Specialization:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="checkbox" class="specialization" id="cs" name="specialization[]" value="Computer Science">5 Star <br/>
+                        <input type="checkbox" class="specialization" id="it" name="specialization[]" value="Information Technology">4 Star<br/>
+                        <input type="checkbox" class="specialization" id="ca" name="specialization[]" value="Computer Architecture">3 Star<br/>
+                        <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Tele Communication">2 Star<br/>
+                        <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Tele Communication">1 Star<br/>
+                        <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Tele Communication">Default<br/>
+                    </div>
+        </div>
+                <button class="submitform">Submit</button></div>   
+                </form>
+                
+        </section>
+    </div>
+
+
+ 
+            <section  id="skills" class="section parallax">
+                <div class="overlay"></div>
+                  <div class="container">
+                      <div class="row">
+                 
+                         <div class="title-box text-center white">
+                     <h2 class="title">Overall power consumption details</h2>
+                     </div>
+                      </div>
+                      <div id="piecharts"> <!--Skill #1-->
+             <div class="col-sm-3 col-md-3 col-lg-3 pie-chart-main">
+                 <span class="pie-chart" data-percent="57">
+                     <span class="percent"></span>
+                 </span>
+                 <h4>DAILY CONSUMPTION</h4>
+                 
+                 
+             </div>
+             
+             <!--Skill #2-->
+             <div class="col-sm-3 col-md-3 col-lg-3 pie-chart-main">
+                 <span class="pie-chart" data-percent="30">
+                     <span class="percent"></span>
+                 </span>
+                 <h4>MONTHLY CONSUMPTION</h4>
+                 
+             </div>
+            </div>
+        </div> <!-- /.row-->
+    </div> <!-- /.container-->
+</section> 
+<!--End Skills-->
+
+
+
+  
+  
+     <!--Start Why Choose us-->
+  <section id="Devices" class="section">
+       <div class="container">
+           <div class="row">
+           
+                 <div class="title-box text-center">
+                    <h2 class="title">Devices</h2>
+                 </div>
+              
+              
+            <!--Start Accordion-->
+            <div class="col-md-6">
+               <div class="panel-group accordion-main" id="accordion">
+                       
+                  <!--About accordion #2-->
+				  <div class="panel">
+                       <div class="panel-heading collapsed" data-toggle="collapse"
+                        data-parent="#accordion" data-target="#collapseTwo">
+                      <h6 class="panel-title accordion-toggle">
+                          Device 1
+                      </h6>
+                       </div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <section  id="skills" class="section parallax">
+                                    <div class="overlay"></div>
+                                      <div class="container">
+                                          <div class="row">
+                                     
+                                             <div class="title-box text-center white">
+                                         <h2 class="title"></h2>
+                                         </div>
+                                          </div>
+                                          <div id="piecharts"> <!--Skill #1-->
+                                 <div class="col-sm-3 col-md-3 col-lg-3 pie-chart-main">
+                                     <span class="pie-chart" data-percent="57">
+                                         <span class="percent"></span>
+                                     </span>
+                                     <h4>DAILY CONSUMPTION</h4>
+                                     
+                                     
+                                 </div>
+                                 
+                                 <!--Skill #2-->
+                                 <div class="col-sm-3 col-md-3 col-lg-3 pie-chart-main">
+                                     <span class="pie-chart" data-percent="30">
+                                         <span class="percent"></span>
+                                     </span>
+                                     <h4>MONTHLY CONSUMPTION</h4>
+                                     
+                                 </div>
+                                </div>
+                            </div> <!-- /.row-->
+                        </div> <!-- /.container-->
+                    </section> 
+                        </div>
+					</div>
+				  </div>
+
+
+ 
+   <!--Start Contact-->
+   <section id="contact" class="section parallax">
+      <div class="overlay"></div>
+       <div class="container">
+           <div class="row">
+           
+                 <div class="title-box text-center white">
+                    <h2 class="title">Contact and Credits</h2>
+                 </div>
+             </div>
+
+               <!--Start contact form-->
+               <div class="col-md-8 col-md-offset-2 contact-form">
+               
+                    <div class="contact-info text-center">
+                       <p>123 4567 890</p>
+                       <p>This webpage is designed and devoloped by Lords of Logics</p><br>
+                       <p>lordsoflogichack4tkm@gmail.com</p>
+                    </div>
+                     
+                     
+       </div> <!-- /.container-->
+   </section>
+   <!--End Contact-->
+   
+      <a href="#" class="scrollup"> <i class="fa fa-chevron-up"> </i> </a>
+
+    <!--Plugins-->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+    function regshow(){
+        console.log("clicked")
+        var x=document.getElementById("secondpage");
+            x.style.display="block"
+        
+
+    }
+    
+    </script>
+ </body>
+</html>
